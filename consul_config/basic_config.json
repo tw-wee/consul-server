@@ -1,0 +1,6 @@
+{
+  "datacenter":"wee-dc",
+  "data_dir":"/opt/consul",
+  "log_level":"INFO",
+  "server":true
+}

@@ -1,0 +1,18 @@
+version: '2'
+services:
+  consul-server-1:
+    build: .
+    container_name: consul-server-1
+    networks:
+      - wee-net
+    volumes:
+      - ../consul_config:/consul/config
+
+networks:
+  wee-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
+          gateway: 172.16.238.1
