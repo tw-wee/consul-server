@@ -16,6 +16,16 @@ services:
         ipv4_address: 172.16.238.3
     volumes:
       - ../server2_config:/consul/config
+  consul-web-ui:
+    build: .
+    container_name: consul-web-ui
+    networks:
+      wee-net:
+        ipv4_address: 172.16.238.8
+    ports:
+      - "8500:8500"
+    volumes:
+      - ../web_ui_config:/consul/config
 
 networks:
   wee-net:
