@@ -1,6 +1,9 @@
 {
+  "node_name": "consul-server-1",
   "datacenter":"wee-dc",
   "data_dir":"/opt/consul",
+  "bootstrap_expect": 2,
+  "start_join": ["172.16.238.3"],
   "log_level":"INFO",
   "server":true
 }

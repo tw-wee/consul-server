@@ -4,9 +4,18 @@ services:
     build: .
     container_name: consul-server-1
     networks:
-      - wee-net
+      wee-net:
+        ipv4_address: 172.16.238.2
     volumes:
-      - ../consul_config:/consul/config
+      - ../server1_config:/consul/config
+  consul-server-2:
+    build: .
+    container_name: consul-server-2
+    networks:
+      wee-net:
+        ipv4_address: 172.16.238.3
+    volumes:
+      - ../server2_config:/consul/config
 
 networks:
   wee-net:
