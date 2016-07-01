@@ -11,7 +11,7 @@ Consul Server
 
 ### how to run?
 * `cd infrastructure`
-* `docker-compose up`
+* `docker-compose build` & `docker-compose up`
 * then open [localhost:10085/ui](localhost:10085/ui) in your browser
 
 ### infrastructure
