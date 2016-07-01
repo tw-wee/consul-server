@@ -23,7 +23,7 @@ services:
       wee-net:
         ipv4_address: 172.16.238.8
     ports:
-      - "8500:8500"
+      - "10085:8500"
     volumes:
       - ../web_ui_config:/consul/config
 

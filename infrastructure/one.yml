@@ -1,0 +1,21 @@
+version: '2'
+services:
+  consul-server-7:
+    build: .
+    container_name: consul-server-7
+    networks:
+      wee-net:
+        ipv4_address: 172.16.238.7
+    volumes:
+      - ../server7_config:/consul/config
+    ports:
+      - "10085:8500"
+
+networks:
+  wee-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
+          gateway: 172.16.238.1
