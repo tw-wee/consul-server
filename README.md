@@ -25,4 +25,4 @@ Consul Server
 ### anything else
 * if you get into the ui container, then curl localhost:8500, you will get 301, don't panic, that's correct. If you use a browser to access localhost:8500, you will get the ui page. Another way is to use `curl -vL localhost:8500`, `-v` shows more info and `-L` follows the redirects. Next time, when you use curl and there is 301 returned, please use `curl -vL`.
 * before consul 0.6.1, you need to download the consul webui zip. As we are using consul 0.6.4, so we can use the internal ui.
-* you need to assign `-client` or `client_addr` for the ui agent, otherwise you cannot access it through docker port. For the reason, check [https://www.consul.io/docs/agent/options.html#_client](https://www.consul.io/docs/agent/options.html#_client)
+* you need to assign `-client` or `client_addr` for the ui agent, otherwise you cannot access it through docker port. According to [https://www.consul.io/docs/agent/options.html#_client](https://www.consul.io/docs/agent/options.html#_client) , by defailt, it is '127.0.0.1', which only allows loopback connections, while docker port is not lookback connection to the container.
