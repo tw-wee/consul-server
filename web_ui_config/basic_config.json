@@ -1,0 +1,9 @@
+{
+  "node_name":"consul-ui",
+  "datacenter":"wee-dc",
+  "data_dir":"/opt/consul",
+  "log_level":"INFO",
+  "ui":true,
+  "retry_join":["172.16.238.3"],
+  "client_addr":"172.16.238.8"
+}

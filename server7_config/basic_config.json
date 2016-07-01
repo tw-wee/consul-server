@@ -1,0 +1,9 @@
+{
+  "datacenter":"wee-dc",
+  "data_dir":"/opt/consul",
+  "bootstrap_expect": 1,
+  "log_level":"INFO",
+  "server":true,
+  "ui":true,
+  "client_addr":"172.16.238.7"
+}
