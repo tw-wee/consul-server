@@ -4,7 +4,7 @@ Consul Server
 [Consul](https://www.consul.io) server based on docker containers.
 
 ### prerequisite
-* [docker](https://www.docker.com/products/docker) is needed, 据说楼主安装了最新款的docker.app
+* [docker](https://www.docker.com/products/docker) is needed, 据说楼主安装了最新款的docker.app。每次电脑从sleep中归来时，总是要重启。
 * docker-compose，如果是在mac上就不需要再次安装了，安装了docker.app就有docker-compose了，至于linux么，楼主不知道啊
 
 理论上，只要上面两个就可以了，如果还需要别的，请提个issue。
